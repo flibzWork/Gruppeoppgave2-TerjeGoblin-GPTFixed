@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoblinTerje</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="center-content">
+        <h1 class="title">Goblin Terje</h1>
+    </div>
+    <div id="goblin-game">
+        <div class="status-bars">
+            <div class="status-label">Sult</div>
+            <div class="status-bar-container">
+                <div id="hunger-bar" class="status-bar hunger"><span id="hunger-percentage"></span></div>
+            </div>
+            <div class="status-label">Leke</div>
+            <div class="status-bar-container">
+                <div id="play-bar" class="status-bar play"><span id="play-percentage"></span></div>
+            </div>
+            <div class="status-label">Renhet</div>
+            <div class="status-bar-container">
+                <div id="clean-bar" class="status-bar clean"><span id="clean-percentage"></span></div>
+            </div>
+        </div>
+        
+        <div class="center-content">
+            <div class="action-buttons">
+				<a class="button" href="#" id="clean-action">Clean</a>
+				<a class="button" href="#" id="feed-action">Feed</a>
+				<a class="button" href="#" id="play-action">Play</a>
+			</div>
+        </div>
+        <div class="center-content"> 
+            <img id="goblin-image" class="goblin-picture" src="img/TerjeTrollEyesOpen.png" alt="Terje" >        
+        </div>
+    </div>
+
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <h2>Game Over</h2>
+            <button class="modalBtn" onclick="window.location.reload()">Start på nytt!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body> 
+</html>
